@@ -1,0 +1,15 @@
+{
+  "name": "six-letter-api",
+  "version": "1.0.0",
+  "description": "A word combination API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --watchAll --coverage"
+  },
+  "author": "Kevin Bervoets",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
