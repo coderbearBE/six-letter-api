@@ -6,6 +6,7 @@ const wordFns = require("./src/words");
 
   const targetLength = wordFns.getMaxCharLength(words);
   const validWords = wordFns.getValidWords(words, targetLength);
+  const combinations = wordFns.findCombinations(words, validWords);
 
-  console.log(validWords);
+  await utils.writeFile(combinations);
 })();

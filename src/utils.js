@@ -10,7 +10,18 @@ const readFile = async (urlToFile) => {
   }
 };
 
-const writeFile = () => {};
+const writeFile = async (validCombinations) => {
+  try {
+    await fs.writeFile(
+      "./assets/output.txt",
+      validCombinations.join("\n"),
+      "utf8"
+    );
+    console.log("Data written to file");
+  } catch (error) {
+    throw new Error("Error writing file: ", error);
+  }
+};
 
 module.exports = {
   readFile,
